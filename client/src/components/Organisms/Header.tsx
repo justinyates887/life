@@ -13,6 +13,8 @@ import Tabs from '@mui/material/Tabs';
 import Toolbar from '@mui/material/Toolbar';
 import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
+import { RootState } from '@/store/store';
+import { useSelector } from 'react-redux';
 
 const lightColor = 'rgba(255, 255, 255, 0.7)';
 
@@ -21,6 +23,8 @@ interface HeaderProps {
 }
 
 export default function Header() {
+
+  const view = useSelector((state: RootState) => state.view)
 
   return (
     <React.Fragment>
@@ -56,7 +60,7 @@ export default function Header() {
           <Grid container alignItems="center" spacing={1}>
             <Grid item xs>
               <Typography color="white" variant="h5" component="h1">
-                Authentication
+                {view}
               </Typography>
             </Grid>
           </Grid>
