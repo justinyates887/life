@@ -8,43 +8,47 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import HomeIcon from '@mui/icons-material/Home';
-import PeopleIcon from '@mui/icons-material/People';
-import DnsRoundedIcon from '@mui/icons-material/DnsRounded';
-import PermMediaOutlinedIcon from '@mui/icons-material/PhotoSizeSelectActual';
-import PublicIcon from '@mui/icons-material/Public';
-import SettingsEthernetIcon from '@mui/icons-material/SettingsEthernet';
-import SettingsInputComponentIcon from '@mui/icons-material/SettingsInputComponent';
-import TimerIcon from '@mui/icons-material/Timer';
-import SettingsIcon from '@mui/icons-material/Settings';
-import PhonelinkSetupIcon from '@mui/icons-material/PhonelinkSetup';
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+import ChecklistIcon from '@mui/icons-material/Checklist';
+import SavingsIcon from '@mui/icons-material/Savings';
+import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';
+import SportsScoreIcon from '@mui/icons-material/SportsScore';
+import BalanceIcon from '@mui/icons-material/Balance';
+import SchoolIcon from '@mui/icons-material/School';
+import HistoryEduIcon from '@mui/icons-material/HistoryEdu';
+import LocalDiningIcon from '@mui/icons-material/LocalDining';
+import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 
 const categories = [
   {
-    id: 'Build',
+    id: 'Finance',
     children: [
       {
-        id: 'Authentication',
-        icon: <PeopleIcon />,
+        id: 'Budget',
+        icon: <AttachMoneyIcon />,
         active: true,
       },
-      { id: 'Database', icon: <DnsRoundedIcon /> },
-      { id: 'Storage', icon: <PermMediaOutlinedIcon /> },
-      { id: 'Hosting', icon: <PublicIcon /> },
-      { id: 'Functions', icon: <SettingsEthernetIcon /> },
-      {
-        id: 'Machine learning',
-        icon: <SettingsInputComponentIcon />,
-      },
+      { id: 'Steps', icon: <ChecklistIcon /> },
+      { id: 'Investments', icon: <SavingsIcon /> },
+      { id: 'Wants', icon: <EmojiEmotionsIcon /> },
+      { id: 'Goals', icon: <SportsScoreIcon /> },
+      { id: 'Buying Power', icon: <BalanceIcon />, },
     ],
   },
   {
-    id: 'Quality',
+    id: 'Education',
     children: [
-      { id: 'Analytics', icon: <SettingsIcon /> },
-      { id: 'Performance', icon: <TimerIcon /> },
-      { id: 'Test Lab', icon: <PhonelinkSetupIcon /> },
+      { id: 'College', icon: <SchoolIcon /> },
+      { id: 'Independant', icon: <HistoryEduIcon /> },
     ],
   },
+  {
+    id: 'Health',
+    children: [
+      { id: 'Nutrition', icon: <LocalDiningIcon /> },
+      { id: 'Workout', icon: <FitnessCenterIcon /> }
+    ]
+  }
 ];
 
 const item = {
@@ -68,17 +72,17 @@ export default function Navigator(props: DrawerProps) {
   return (
     <Drawer variant="permanent" {...other}>
       <List disablePadding>
-        <ListItem sx={{ ...item, ...itemCategory, fontSize: 22, color: '#fff' }}>
-          Paperbase
+        <ListItem sx={{ ...item, ...itemCategory, fontSize: 30, color: '#fff', height: '92px' }}>
+          Life
         </ListItem>
         <ListItem sx={{ ...item, ...itemCategory }}>
           <ListItemIcon>
             <HomeIcon />
           </ListItemIcon>
-          <ListItemText>Project Overview</ListItemText>
+          <ListItemText>Dashboard</ListItemText>
         </ListItem>
         {categories.map(({ id, children }) => (
-          <Box key={id} sx={{ bgcolor: '#101F33' }}>
+          <Box key={id} sx={{ bgcolor: '#00BD5F' }}>
             <ListItem sx={{ py: 2, px: 3 }}>
               <ListItemText sx={{ color: '#fff' }}>{id}</ListItemText>
             </ListItem>

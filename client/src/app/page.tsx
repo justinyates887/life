@@ -1,8 +1,8 @@
 'use client'
 import styles from '../assets/styles/page.module.css'
 import { useState } from 'react'
-import Navigator from '@/components/Navigator'
-import Header from '@/components/Header';
+import Navigator from '@/components/Organisms/Navigator'
+import Header from '@/components/Organisms/Header';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { Box, Typography, Link, CssBaseline } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -12,7 +12,7 @@ function Copyright() {
     <Typography variant="body2" color="text.secondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="github.com/justinyates887">
-        Life
+        Justin Yates
       </Link>{' '}
       {new Date().getFullYear()}.
     </Typography>
@@ -23,7 +23,7 @@ let theme = createTheme({
   palette: {
     primary: {
       light: '#63ccff',
-      main: '#009be5',
+      main: '#00AF57',
       dark: '#006db3',
     },
   },
@@ -57,7 +57,7 @@ theme = {
     MuiDrawer: {
       styleOverrides: {
         paper: {
-          backgroundColor: '#081627',
+          backgroundColor: '#00AF57',
         },
       },
     },
