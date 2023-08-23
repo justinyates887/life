@@ -43,3 +43,14 @@ C:\Users\itsas\projects\life\Life.API\Life.API\obj\Debug\net6.0\refint\Life.API.
 C:\Users\itsas\projects\life\Life.API\Life.API\obj\Debug\net6.0\Life.API.pdb
 C:\Users\itsas\projects\life\Life.API\Life.API\obj\Debug\net6.0\Life.API.genruntimeconfig.cache
 C:\Users\itsas\projects\life\Life.API\Life.API\obj\Debug\net6.0\ref\Life.API.dll
+C:\Users\itsas\projects\life\Life.API\Life.API\bin\Debug\net6.0\Life.Data.deps.json
+C:\Users\itsas\projects\life\Life.API\Life.API\bin\Debug\net6.0\Life.Data.runtimeconfig.json
+C:\Users\itsas\projects\life\Life.API\Life.API\bin\Debug\net6.0\Life.Domain.deps.json
+C:\Users\itsas\projects\life\Life.API\Life.API\bin\Debug\net6.0\Life.Domain.runtimeconfig.json
+C:\Users\itsas\projects\life\Life.API\Life.API\bin\Debug\net6.0\Life.Domain.exe
+C:\Users\itsas\projects\life\Life.API\Life.API\bin\Debug\net6.0\Life.Data.exe
+C:\Users\itsas\projects\life\Life.API\Life.API\bin\Debug\net6.0\dotenv.net.dll
+C:\Users\itsas\projects\life\Life.API\Life.API\bin\Debug\net6.0\Life.Data.dll
+C:\Users\itsas\projects\life\Life.API\Life.API\bin\Debug\net6.0\Life.Domain.dll
+C:\Users\itsas\projects\life\Life.API\Life.API\bin\Debug\net6.0\Life.Data.pdb
+C:\Users\itsas\projects\life\Life.API\Life.API\bin\Debug\net6.0\Life.Domain.pdb

@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "xwp+fYr2TqivyVtytidbvG6rFEkLpVjcul0tEmScdW1i9m/zUalU8GdfC1rt//mWKYwhXBJJz9m4kYiSpOmAwQ==",
+  "dgSpecHash": "KvUBsz5lXZr6D8V+J7I+x4UAp3hHizYTHnmcXMa57oZqJEXbS58or+/XpXZUA+ZnsI1rdMrg+avne462ZRSIYQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\itsas\\projects\\life\\Life.API\\Life.API\\Life.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\itsas\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\itsas\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
     "C:\\Users\\itsas\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
+    "C:\\Users\\itsas\\.nuget\\packages\\dotenv.net\\3.1.2\\dotenv.net.3.1.2.nupkg.sha512",
     "C:\\Users\\itsas\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\itsas\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.0.0\\microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",
     "C:\\Users\\itsas\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",

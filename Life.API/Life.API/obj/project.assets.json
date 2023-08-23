@@ -47,6 +47,15 @@
           }
         }
       },
+      "dotenv.net/3.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/dotenv.net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/dotenv.net.dll": {}
+        }
+      },
       "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
         "type": "package",
         "build": {
@@ -379,6 +388,40 @@
         "runtime": {
           "lib/net6.0/ZstdSharp.dll": {}
         }
+      },
+      "Life.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Life.Domain": "1.0.0",
+          "MongoDB.Driver": "2.21.0",
+          "dotenv.net": "3.1.2"
+        },
+        "compile": {
+          "bin/placeholder/Life.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Life.Data.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Life.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "dotenv.net": "3.1.2"
+        },
+        "compile": {
+          "bin/placeholder/Life.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Life.Domain.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -457,6 +500,20 @@
         "lib/netstandard2.0/DnsClient.xml",
         "lib/netstandard2.1/DnsClient.dll",
         "lib/netstandard2.1/DnsClient.xml"
+      ]
+    },
+    "dotenv.net/3.1.2": {
+      "sha512": "lFm4hGX9JkNtAF36Uz4C3WT7MC6Ys802k0cPvlln8ydmH67GQjnToH+w645tQm1czAjW/V6tPE088lD77sYFGA==",
+      "type": "package",
+      "path": "dotenv.net/3.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dotenv.net.3.1.2.nupkg.sha512",
+        "dotenv.net.nuspec",
+        "lib/netstandard1.6/dotenv.net.dll",
+        "lib/netstandard2.0/dotenv.net.dll",
+        "lib/netstandard2.1/dotenv.net.dll"
       ]
     },
     "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
@@ -1201,12 +1258,24 @@
         "zstdsharp.port.0.6.2.nupkg.sha512",
         "zstdsharp.port.nuspec"
       ]
+    },
+    "Life.Data/1.0.0": {
+      "type": "project",
+      "path": "../Life.Data/Life.Data.csproj",
+      "msbuildProject": "../Life.Data/Life.Data.csproj"
+    },
+    "Life.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Life.Domain/Life.Domain.csproj",
+      "msbuildProject": "../Life.Domain/Life.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Life.Data >= 1.0.0",
       "MongoDB.Driver >= 2.21.0",
-      "Swashbuckle.AspNetCore >= 6.5.0"
+      "Swashbuckle.AspNetCore >= 6.5.0",
+      "dotenv.net >= 3.1.2"
     ]
   },
   "packageFolders": {
@@ -1235,7 +1304,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\itsas\\projects\\life\\Life.API\\Life.Data\\Life.Data.csproj": {
+              "projectPath": "C:\\Users\\itsas\\projects\\life\\Life.API\\Life.Data\\Life.Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -1255,6 +1328,10 @@
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.5.0, )"
+          },
+          "dotenv.net": {
+            "target": "Package",
+            "version": "[3.1.2, )"
           }
         },
         "imports": [

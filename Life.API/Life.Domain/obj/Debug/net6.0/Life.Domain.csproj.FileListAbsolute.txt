@@ -23,3 +23,6 @@ C:\Users\itsas\projects\life\Life.API\Life.Domain\obj\Debug\net6.0\refint\Life.D
 C:\Users\itsas\projects\life\Life.API\Life.Domain\obj\Debug\net6.0\Life.Domain.pdb
 C:\Users\itsas\projects\life\Life.API\Life.Domain\obj\Debug\net6.0\Life.Domain.genruntimeconfig.cache
 C:\Users\itsas\projects\life\Life.API\Life.Domain\obj\Debug\net6.0\ref\Life.Domain.dll
+C:\Users\itsas\projects\life\Life.API\Life.Domain\bin\Debug\net6.0\dotenv.net.dll
+C:\Users\itsas\projects\life\Life.API\Life.Domain\obj\Debug\net6.0\Life.Domain.csproj.AssemblyReference.cache
+C:\Users\itsas\projects\life\Life.API\Life.Domain\obj\Debug\net6.0\Life.Domain.csproj.CopyComplete
