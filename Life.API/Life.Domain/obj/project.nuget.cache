@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "i3B9KYa0bUcs+QwP2xPtqbrRVEq/MG0ycKT3Wmnc/PrIpKjDzfp/09OapTBfp+sEVm/0CPPvz53RJNQfv5McdQ==",
+  "dgSpecHash": "Z0s/J4ZkKeDrkeAEkl7ua4aScMKZJ6hTjvy2CN2pBa/z/sIHRTs1UqgfzdbCy5n90I3A6Nb1uvJ8ZZdIh9pakQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\itsas\\projects\\life\\Life.API\\Life.Domain\\Life.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\itsas\\.nuget\\packages\\dotenv.net\\3.1.2\\dotenv.net.3.1.2.nupkg.sha512"
+  ],
   "logs": []
 }

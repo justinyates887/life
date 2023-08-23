@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "4nxgteaLi8Nd1Bp69zt6mq3GOBzsS1/nnMI64v4442AX83CLUH0vCEcEsYEYa+K89GQ4mIXG6jTOtPqJh86zig==",
+  "dgSpecHash": "QUqHLThloPxFQSThquxXKdFZmCuhvqV7EdpYaSrzwaqki3yhSFnd9mUwI3QwrKpFiqf/vELhHWU/oMmW2wZEEw==",
   "success": true,
   "projectFilePath": "C:\\Users\\itsas\\projects\\life\\Life.API\\Life.Data\\Life.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\itsas\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\itsas\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
     "C:\\Users\\itsas\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
+    "C:\\Users\\itsas\\.nuget\\packages\\dotenv.net\\3.1.2\\dotenv.net.3.1.2.nupkg.sha512",
     "C:\\Users\\itsas\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.0.0\\microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",
     "C:\\Users\\itsas\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\itsas\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",

@@ -1,6 +1,15 @@
+using Life.Data;
+using dotenv;
+using Microsoft.Extensions.Configuration;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+string mongoDBConnectionString = Environment.GetEnvironmentVariable("MongoDBConnectionString");
+string databaseName = Environment.GetEnvironmentVariable("DatabaseName");
+
+// Register DataContext with dependency injection
+builder.Services.AddSingleton<DataContext>(sp => new DataContext(mongoDBConnectionString, databaseName));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

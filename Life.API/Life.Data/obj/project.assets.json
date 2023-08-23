@@ -47,6 +47,15 @@
           }
         }
       },
+      "dotenv.net/3.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/dotenv.net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/dotenv.net.dll": {}
+        }
+      },
       "Microsoft.Extensions.Logging.Abstractions/2.0.0": {
         "type": "package",
         "compile": {
@@ -296,6 +305,9 @@
       "Life.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "dotenv.net": "3.1.2"
+        },
         "compile": {
           "bin/placeholder/Life.Domain.dll": {}
         },
@@ -383,6 +395,20 @@
         "lib/netstandard2.0/DnsClient.xml",
         "lib/netstandard2.1/DnsClient.dll",
         "lib/netstandard2.1/DnsClient.xml"
+      ]
+    },
+    "dotenv.net/3.1.2": {
+      "sha512": "lFm4hGX9JkNtAF36Uz4C3WT7MC6Ys802k0cPvlln8ydmH67GQjnToH+w645tQm1czAjW/V6tPE088lD77sYFGA==",
+      "type": "package",
+      "path": "dotenv.net/3.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dotenv.net.3.1.2.nupkg.sha512",
+        "dotenv.net.nuspec",
+        "lib/netstandard1.6/dotenv.net.dll",
+        "lib/netstandard2.0/dotenv.net.dll",
+        "lib/netstandard2.1/dotenv.net.dll"
       ]
     },
     "Microsoft.Extensions.Logging.Abstractions/2.0.0": {
@@ -799,7 +825,8 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Life.Domain >= 1.0.0",
-      "MongoDB.Driver >= 2.21.0"
+      "MongoDB.Driver >= 2.21.0",
+      "dotenv.net >= 3.1.2"
     ]
   },
   "packageFolders": {
@@ -848,6 +875,10 @@
           "MongoDB.Driver": {
             "target": "Package",
             "version": "[2.21.0, )"
+          },
+          "dotenv.net": {
+            "target": "Package",
+            "version": "[3.1.2, )"
           }
         },
         "imports": [

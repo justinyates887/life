@@ -6,14 +6,14 @@ namespace MyProject.Data.Repositories
 {
     public class BudgetRepository
     {
-        private readonly IMongoCollection<BudgetItemModel> _budgets;
+        private readonly IMongoCollection<BudgetModel> _budgets;
 
         public BudgetRepository(DataContext dataContext)
         {
             _budgets = dataContext.Budgets;
         }
 
-        public void AddBudget(BudgetItemModel budget)
+        public void AddBudget(BudgetModel budget)
         {
             _budgets.InsertOne(budget);
         }

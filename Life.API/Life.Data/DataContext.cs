@@ -1,4 +1,5 @@
-﻿using Life.API.Models.Budget;
+﻿using Life.API.Models;
+using Life.API.Models.Budget;
 using MongoDB.Driver;
 
 namespace Life.Data
@@ -14,5 +15,7 @@ namespace Life.Data
         }
 
         public IMongoCollection<BudgetModel> Budgets => _database.GetCollection<BudgetModel>("budgets");
+
+        public IMongoCollection<UserModel> Users => _database.GetCollection<UserModel>("users");
     }
 }
