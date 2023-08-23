@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34009.444
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Life.API", "Life.API\Life.API.csproj", "{073CB08F-B8EE-4FCD-A717-82C97E5DD409}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Life.Data", "Life.Data\Life.Data.csproj", "{E932727D-B487-429D-8B31-83775121DE1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Life.Domain", "Life.Domain\Life.Domain.csproj", "{83F966C6-9FA3-4DE3-9DC0-1F164F0A0F78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{073CB08F-B8EE-4FCD-A717-82C97E5DD409}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{073CB08F-B8EE-4FCD-A717-82C97E5DD409}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{073CB08F-B8EE-4FCD-A717-82C97E5DD409}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{073CB08F-B8EE-4FCD-A717-82C97E5DD409}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E932727D-B487-429D-8B31-83775121DE1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E932727D-B487-429D-8B31-83775121DE1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E932727D-B487-429D-8B31-83775121DE1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E932727D-B487-429D-8B31-83775121DE1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83F966C6-9FA3-4DE3-9DC0-1F164F0A0F78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83F966C6-9FA3-4DE3-9DC0-1F164F0A0F78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83F966C6-9FA3-4DE3-9DC0-1F164F0A0F78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83F966C6-9FA3-4DE3-9DC0-1F164F0A0F78}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {65CEADD8-54F7-4376-9E80-0E09DD52547B}
+	EndGlobalSection
+EndGlobal

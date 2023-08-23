@@ -1,0 +1,6 @@
+C:\Users\itsas\projects\life\Life.API\Life.Data\obj\Debug\net6.0\Life.Data.csproj.AssemblyReference.cache
+C:\Users\itsas\projects\life\Life.API\Life.Data\obj\Debug\net6.0\Life.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\itsas\projects\life\Life.API\Life.Data\obj\Debug\net6.0\Life.Data.AssemblyInfoInputs.cache
+C:\Users\itsas\projects\life\Life.API\Life.Data\obj\Debug\net6.0\Life.Data.AssemblyInfo.cs
+C:\Users\itsas\projects\life\Life.API\Life.Data\obj\Debug\net6.0\Life.Data.csproj.CoreCompileInputs.cache
+C:\Users\itsas\projects\life\Life.API\Life.Data\obj\Debug\net6.0\Life.Data.MvcApplicationPartsAssemblyInfo.cache
