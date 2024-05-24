@@ -1,6 +1,7 @@
 ﻿using Life.API.Interfaces;
 using Life.API.Objects;
 using Microsoft.AspNetCore.Mvc;
+using MongoDB.Bson;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -22,7 +23,7 @@ public class UsersController : ControllerBase
     }
 
     [HttpGet("{id}")]
-    public async Task<ActionResult<User>> GetUser(string id)
+    public async Task<ActionResult<User>> GetUser(ObjectId id)
     {
         var user = await _userRepository.GetByIdAsync(id);
         if (user == null)
@@ -40,23 +41,51 @@ public class UsersController : ControllerBase
     }
 
     [HttpPut("{id}")]
-    public async Task<IActionResult> UpdateUser(string id, User user)
+    public async Task<IActionResult> UpdateUser(string id, [FromBody] UserUpdateDto userDto)
     {
-        if (id != user.Id)
+        if (string.IsNullOrEmpty(id))
         {
-            return BadRequest();
+            return BadRequest("Id parameter is required.");
         }
 
-        var result = await _userRepository.UpdateAsync(id, user);
+        var objectId = ObjectId.Parse(id);
+
+        var user = await _userRepository.GetByIdAsync(objectId);
+        if (user == null)
+        {
+            return NotFound();
+        }
+
+        // Update user properties if provided in the DTO
+        if (!string.IsNullOrEmpty(userDto.BudgetId))
+        {
+            user.BudgetId = userDto.BudgetId;
+        }
+
+        if (!string.IsNullOrEmpty(userDto.UserEmail))
+        {
+            user.UserEmail = userDto.UserEmail;
+        }
+
+        if (!string.IsNullOrEmpty(userDto.PasswordHash))
+        {
+            user.PasswordHash = userDto.PasswordHash;
+        }
+
+        // Update the user object in the repository
+        var result = await _userRepository.UpdateAsync(objectId, user);
         if (!result)
         {
             return NotFound();
         }
+
         return NoContent();
     }
 
+
+
     [HttpDelete("{id}")]
-    public async Task<IActionResult> DeleteUser(string id)
+    public async Task<IActionResult> DeleteUser(ObjectId id)
     {
         var result = await _userRepository.DeleteAsync(id);
         if (!result)

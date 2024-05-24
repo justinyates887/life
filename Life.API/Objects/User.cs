@@ -7,7 +7,7 @@ namespace Life.API.Objects
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
-        public string Id { get; set; }
+        public ObjectId Id { get; set; } = ObjectId.GenerateNewId();
 
         [BsonElement("budgetId")]
         public string? BudgetId { get; set; }
